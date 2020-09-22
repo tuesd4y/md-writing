@@ -1,0 +1,45 @@
+{
+  "name": "md-system",
+  "version": "1.0.0",
+  "description": "system for automatic compilation of markdown files",
+  "main": "index.js",
+  "bin": {
+    "md-watch": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./index.js"
+  },
+  "keywords": [
+    "markdown",
+    "writing",
+    "compilation"
+  ],
+  "author": "Chris Stelzmueller <tuesd4y@protonmail.ch>",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.4.2",
+    "md-to-pdf": "^3.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": true,
+    "bracketSpacing": true,
+    "overrides": [
+      {
+        "files": [
+          "package.json"
+        ],
+        "options": {
+          "useTabs": false
+        }
+      }
+    ]
+  }
+}
