@@ -14,4 +14,4 @@ Every newly created or changed file will automatically be compiled into a pdf an
   - line with tags
   - participants (in italics)
   - regular content
-- [ ] delete compiled files if original is deleted
+- [ ] delete compiled files if original is deleted / moved

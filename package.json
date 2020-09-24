@@ -19,7 +19,9 @@
   "license": "ISC",
   "dependencies": {
     "chokidar": "^3.4.2",
+    "debug": "^4.2.0",
     "esm": "^3.2.25",
+    "glob": "^7.1.6",
     "md-to-pdf": "^3.1.1",
     "minimist": "^1.2.5"
   },

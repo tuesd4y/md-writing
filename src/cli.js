@@ -1,5 +1,8 @@
 import minimist from 'minimist';
-import { watchMd } from './watch';
+import { compile, watchMd } from './watch';
+import * as d from 'debug';
+
+const debug = d.debug('cli');
 
 const log = console.log.bind(console);
 
@@ -12,13 +15,18 @@ export function cli(argsArray) {
 
   switch (cmd) {
     case 'help':
-      help(args);
+      console.log('not yet implemented!');
       break;
     case 'watch':
       watchMd(args);
       break;
     case 'create':
-      createTemplate(args);
+      // create template
+      console.log('not yet implemented!');
+      break;
+    case 'compile':
+      // compile all files given
+      compile(args);
       break;
     default:
       console.error(`"${cmd}" is not a valid command!`);
